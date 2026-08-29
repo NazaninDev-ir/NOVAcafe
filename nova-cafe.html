@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>NOVA Café</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="table">
+                Table <strong>12</strong>
+            </div>
+
+            <div class="logo">
+                <strong>NOVA</strong>
+                <span>Café</span>
+            </div>
+
+            <button class="cart-button">
+                🛒
+                <span class="badge">0</span>
+            </button>
+
+        </header>
+
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <img
+                id="heroImage"
+                src="images/banners/banner-01.webp"
+                alt="NOVA Café">
+
+            <div class="hero-content">
+
+                <h1>Sweet Moments</h1>
+
+                <p>
+                    Fresh coffee & homemade desserts
+                </p>
+
+                <button class="hero-btn">
+                    View Menu →
+                </button>
+
+            </div>
+
+
+            <!-- Slider Dots -->
+            <div class="dots">
+
+                <button
+                    class="dot active"
+                    data-slide="0">
+                </button>
+
+                <button
+                    class="dot"
+                    data-slide="1">
+                </button>
+
+                <button
+                    class="dot"
+                    data-slide="2">
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Categories -->
+        <section class="categories-section">
+
+            <div class="section-title">
+                <h2>Categories</h2>
+            </div>
+
+
+            <div class="categories">
+
+                <button
+                    class="category active"
+                    data-category="coffee">
+
+                    <div class="category-image">
+                        <img
+                            src="images/vAoGy.jpg"
+                            alt="Coffee">
+                    </div>
+
+                    <span>Coffee</span>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="cake">
+
+                    <div class="category-image">
+                        <img
+                            src="images/categories/cake.webp"
+                            alt="Cakes">
+                    </div>
+
+                    <span>Cakes</span>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="bakery">
+
+                    <div class="category-image">
+                        <img
+                            src="images/categories/bakery.webp"
+                            alt="Bakery">
+                    </div>
+
+                    <span>Bakery</span>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="cold">
+
+                    <div class="category-image">
+                        <img
+                            src="images/categories/drinks.webp"
+                            alt="Cold Drinks">
+                    </div>
+
+                    <span>Cold Drinks</span>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="juice">
+
+                    <div class="category-image">
+                        <img
+                            src="images/categories/juice.webp"
+                            alt="Juices">
+                    </div>
+
+                    <span>Juices</span>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="sandwich">
+
+                    <div class="category-image">
+                        <img
+                            src="images/categories/sandwich.webp"
+                            alt="Sandwiches">
+                    </div>
+
+                    <span>Sandwiches</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Products -->
+        <section class="products-section">
+
+            <div class="section-title">
+
+                <h2 id="sectionTitle">
+                    Coffee
+                </h2>
+
+                <button class="view-all">
+                    View All →
+                </button>
+
+            </div>
+
+
+            <div class="products">
+
+
+                <!-- Coffee -->
+                <article
+                    class="product"
+                    data-category="coffee">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/coffee-01.png"
+                            alt="Iced Latte">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Iced Latte</h3>
+
+                        <p>
+                            Cold espresso with fresh milk
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                95,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-category="coffee">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/coffee-02.png"
+                            alt="Cappuccino">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Cappuccino</h3>
+
+                        <p>
+                            Espresso with steamed milk
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                85,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-category="coffee">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Americano.jpeg"
+                            alt="Americano">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Americano</h3>
+
+                        <p>
+                            Espresso with hot water
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                70,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Cakes -->
+                <article
+                    class="product"
+                    data-category="cake">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/StrawberryCake.jpg"
+                            alt="Strawberry Cake">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Strawberry Cake</h3>
+
+                        <p>
+                            Cream cake with fresh strawberries
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                120,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-category="cake">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images//ChocolateCake.jpg"
+                            alt="Chocolate Cake">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            Chocolate cake with chocolate sauce
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                115,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Bakery -->
+                <article
+                    class="product"
+                    data-category="bakery">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Croissant.jpg"
+                            alt="Croissant">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Croissant</h3>
+
+                        <p>
+                            Fresh and buttery croissant
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                65,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Cold Drinks -->
+                <article
+                    class="product"
+                    data-category="cold">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/IcedCoffee.jpg"
+                            alt="Iced Coffee">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Iced Coffee</h3>
+
+                        <p>
+                            Cold and refreshing coffee
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                90,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Juices -->
+                <article
+                    class="product"
+                    data-category="juice">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Orange.jpg"
+                            alt="Orange Juice">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Orange Juice</h3>
+
+                        <p>
+                            Fresh and natural orange juice
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                80,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Sandwiches -->
+                <article
+                    class="product"
+                    data-category="sandwich">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/ChickenSandwich.jpg"
+                            alt="Chicken Sandwich">
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h3>Chicken Sandwich</h3>
+
+                        <p>
+                            Grilled chicken with fresh vegetables
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                145,000 Toman
+                            </span>
+
+                            <button class="add">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>د
