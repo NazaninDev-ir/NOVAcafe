@@ -285,3 +285,133 @@ button{font:inherit;border:0;cursor:pointer}
     .price{font-size:11px}
     .cart-bar{bottom:10px}
 }
+
+/* =========================
+   Product Modal
+========================= */
+
+.product-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.product-modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 2;
+    width: min(90%, 420px);
+    background: #fffaf7;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+    animation: modalShow 0.25s ease;
+}
+
+@keyframes modalShow {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8eee8;
+    padding: 25px;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal-info {
+    padding: 24px;
+}
+
+.modal-info h2 {
+    margin: 0 0 10px;
+}
+
+.modal-info p {
+    margin: 0 0 18px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.modal-price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.quantity button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.quantity span {
+    min-width: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal-add {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
